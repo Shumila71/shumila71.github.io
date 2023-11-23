@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 490px) {
     .grid-container {
         display: grid;
         grid-template-columns: 100%;
@@ -107,13 +107,19 @@
         grid-area: g3;
     }
     .footer-item {
-        padding: 20px;
+        padding: 0 20px;
         text-align: center;
         transition: transform 0.3s;
     }
     
     .footer-item:hover {
         transform: scale(1.01);
+    }
+    .footer-item h3{
+        margin: 10px 0;
+    }
+    .social-buttons{
+        margin: 25px 0;
     }
     
     .footer-item h3 {
@@ -162,4 +168,18 @@
     .main-container #first{
         max-width: 100%;
     }
+    .section-left,
+    .section-right {
+        grid-template-areas: 
+        "e1"
+        "e2";
+    }
+    .image-left img,
+    .image-right img {
+        width: 100%;
+    }
+    .image-right{
+        grid-area: e2;
+    }
+
 }

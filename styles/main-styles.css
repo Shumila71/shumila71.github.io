@@ -61,6 +61,17 @@ p {
     margin-top: 10px;
     transition: width 0.3s;
 }
+.main-container #second::after{
+    bottom:0;
+    position: relative;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #3498db;
+    display: block;
+    margin-top: 10px;
+    transition: width 0.3s;
+}
 .main-container .first-img img{
     max-width: 100%;
     border-radius: 10px;
@@ -78,6 +89,67 @@ p {
     margin-bottom: 2em;
     width: 100%;
 }
+.section-left {
+    display: grid;
+    grid-template-areas: "e1 e2";
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+.info-left h3{
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
+.image-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+#third::after{
+    bottom:0;
+    position: relative;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #3498db;
+    display: block;
+    margin-top: 10px;
+    transition: width 0.3s;
+}
+#fourth::after{
+    bottom:0;
+    position: relative;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #3498db;
+    display: block;
+    margin-top: 10px;
+    transition: width 0.3s;
+}
+.section-right {
+    display: grid;
+    grid-template-areas: "e1 e2";
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    text-align: right;
+}
+.image-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 .console-list {
     display: flex;
     justify-content: space-between;
@@ -97,10 +169,6 @@ p {
     height: auto;
     margin-bottom: 10px;
 }
-
-
-
-
 .card-list{
     display: flex;
     justify-content: space-around;
@@ -492,13 +560,6 @@ p {
 .grid-item:hover {
     transform: scale(1.1);
 }
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "g1 g2 g3"
-    "g4 g4 g4";
-    gap: 5px 20px ;
-}
+
 
 
