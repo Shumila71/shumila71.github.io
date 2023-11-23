@@ -181,5 +181,7 @@
     .image-right{
         grid-area: e2;
     }
-
+    .section-right{
+    text-align: right;
+    }
 }
