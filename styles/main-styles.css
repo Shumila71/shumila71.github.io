@@ -19,6 +19,7 @@ main{
     --border-color: #303035;
     --bg-sec-color: #1e1e24;
     --header-text-color: rgb(116, 48, 129);
+    --text-sec-color: #0977a3;
 }
 .grid-container {
     display: grid;
@@ -36,6 +37,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 p {
     font-size: 18px;
+}
+a:active, a:visited, a{
+    text-decoration: none;
+    color: #f5f5f5;
 }
 #tablet-header{
     display: none;
@@ -395,131 +400,6 @@ p {
     flex-wrap: wrap;
     z-index: 1;
 }
-.card3 {
-    position: relative;
-    width: 300px;
-    height: 350px;
-    transition: transform 0.4s;
-    padding: .5rem;
-    z-index: 3;
-    background: var(--bg-sec-color);
-    transition: all 0.3s ease-in;
-    z-index: 100;
-    overflow: hidden;
-}
-@keyframes animateBottom {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-}
-@keyframes animateTop {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-@keyframes animateRight {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(-100%);
-    }
-}
-@keyframes animateLeft {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(100%);
-    }
-}
-.card3 span:nth-child(1) {
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(to left, rgba(8, 43, 26, 0), #209347);
-    animation: 2s animateTop linear infinite;
-}
-.card3 span:nth-child(2) {
-    top: 0px;
-    right: 0px;
-    height: 100%;
-    width: 3px;
-    background: linear-gradient(to left, rgba(8, 43, 26, 0), #209347);
-    animation: 2s animateRight linear -1s infinite;
-}
-.card3 span:nth-child(3) {
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(to left, rgba(8, 43, 26, 0), #209347);
-    animation: 2s animateBottom linear infinite;
-}
-.card3 span:nth-child(4) {
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 3px;
-    background: linear-gradient(to left, rgba(8, 43, 26, 0), #209347); 
-    animation: 2s animateLeft linear -1s infinite;
-}
-.card3 span {
-    position: absolute;
-  }
-.line{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-}
-.card3:hover .line{
-    opacity: 1;
-}
-.content3 {
-    position: absolute;
-    top: 30px;
-    left: 20px;
-    padding-right: 4px;
-    z-index: 3;
-}
-.card3:hover{
-    transform: scale(1.1);
-    filter:none;
-}
-.card-filt2:hover .card3:not(:hover){
-    filter: brightness(0.4);
-}
-.card3 .num-card {
-    position: absolute;
-    top: 15%;
-    right: 1rem;
-    font-size: 7rem;
-    color: #0977a3;
-    user-select: none;
-    transition: all 0.4s;
-    z-index: -100;
-    overflow: hidden;
-}
-.card3 .num-card{
-    filter: brightness(0.2);
-}
-.card3:hover .num-card {
-    transform: scale(1.1);
-    filter:none;
-    top: -45%;
-    font-size: 9rem;
-}
-
 .grid-first {
     display: grid;
     grid-template-columns: repeat(4, auto);
