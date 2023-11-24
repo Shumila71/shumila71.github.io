@@ -37,6 +37,9 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-size: 18px;
 }
+#tablet-header{
+    display: none;
+}
 .main-container img{
     border-radius: 10px;
 }
@@ -139,6 +142,9 @@ p {
     width: 100%;
     height: auto;
     border-radius: 10px;
+}
+.section-left, .section-right {
+    margin-bottom: 2rem;
 }
 ::-webkit-scrollbar {
     width: 11px;

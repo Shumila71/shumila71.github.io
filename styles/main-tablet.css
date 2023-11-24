@@ -78,5 +78,31 @@
     .footer-content .contacts{
         padding-top: 0;
     }
+    #tablet-header{
+        margin-bottom: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(2,40%);
+        grid-template-areas: 
+        "e1 e2"
+        "e3 e4"
+        "e5 e5";
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        gap: 15px;
+    }
+    #pc-head{
+        display: none;
+    }
+    #for-grid{
+        grid-area: e5;
+        width: 33rem !important;
+    }
+    .nameSite{
+        margin-top: 0;
+    }
+    #tablet-header .btn4 {
+        width: 16rem;
+    }
     
 }
