@@ -141,6 +141,8 @@ a:active, a:visited, a{
     justify-items: center;
     align-items: center;
     gap: 20px;
+}
+.section-right .info-right p{
     text-align: right;
 }
 .image-right img {

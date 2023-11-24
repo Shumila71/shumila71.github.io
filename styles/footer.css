@@ -1,6 +1,6 @@
 footer {
     grid-area: footer;
-    margin-top: 80px;
+    margin-top: 60px;
     text-align: center;
 }
 .btn4 {
@@ -128,4 +128,9 @@ footer {
 .fast-links{
     display: grid;
     gap: .35rem;
+}
+@media screen and (max-width: 490px) {
+    footer {
+        margin-top: 2rem;
+    }
 }

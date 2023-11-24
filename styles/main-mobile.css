@@ -47,6 +47,9 @@
     textarea {
         max-width: 40vw;
     }
+    .history {
+        margin-top: 0;
+    }
     main {
         padding-left: 5px;
         margin-left: 0 ;
