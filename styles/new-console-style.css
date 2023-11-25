@@ -163,7 +163,24 @@
 }
 
 @media screen and (max-width: 490px) {
-    .card1 {
-        margin-bottom: 100px;
+    .two-column-grid .card1 {
+        margin-bottom: 10px;
+        height: 350px;
+    }
+    .bg-gr {
+        height: 450px;
+        top:-400px;
+    }
+    .two-column-grid .img-hide-mobile {
+        display: none;
+    }
+    .two-column-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "e1"
+        "e2";
+    }
+    .animation-square, .animation-square1{
+        z-index: 3;
     }
 }
