@@ -61,7 +61,7 @@
     background: rgba(15, 106, 145, 0.2);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    z-index: 5;
+    z-index: 3;
     display: none;
 }
 .animation-square1 {
@@ -71,7 +71,7 @@
     background: rgba(15, 106, 145, 0.2);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    z-index: 5;
+    z-index: 3;
     display: none;
 }
 .card1:hover .animation-square {
@@ -119,14 +119,14 @@
     flex-wrap: wrap;
     margin-bottom: 36px;
 }
-.new-console img{
+.new-portable-console img{
     max-width: 100%;
     border-radius: 10px;
 }
 #first-img{
     margin-top: 36px;
 }
-.new-console #underline::after{
+.new-portable-console #underline::after{
     bottom:0;
     position: relative;
     content: "";
@@ -137,7 +137,7 @@
     margin-top: 10px;
     transition: width 0.3s;
 }
-.new-console .img-hide-pc{
+.new-portable-console .img-hide-pc{
     display: none;
 }
 @keyframes CardAnimation {
@@ -183,14 +183,20 @@
         "e1"
         "e2";
     }
+    .two-column-grid .column-flex-left{
+        grid-area: e1;
+    }
     .animation-square, .animation-square1{
         z-index: 3;
     }
-    .new-console .img-hide-pc{
+    .new-portable-console .img-hide-pc{
         display: block;
         margin: 0;
     }
-    .new-console .underline-img::after {
+    .new-portable-console .img-hide-pc {
+        position: relative;
+    }
+    .new-portable-console .underline-img::after {
         bottom: 0;
         content: "";
         width: 100%;
