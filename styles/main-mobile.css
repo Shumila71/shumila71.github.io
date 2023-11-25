@@ -188,3 +188,13 @@
     text-align: left;
     }
 }
+@media screen and (max-width: 380px) {
+    header a,p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 330px) {
+    header a,p{
+        font-size: 10px;
+    }
+}

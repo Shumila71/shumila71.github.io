@@ -1,32 +1,44 @@
+// Получаем элемент заголовка по его id
 var welcomeText = document.getElementById("welcomeText");
+
+// Массив с синонимами приветствия на разных языках
 var greetings = ["Готовы к новому квесту?","Приготовьтесь к игровым открытиям.","У нас интересно, оставайтесь с нами!","Добро пожаловать в мир игр и консолей."];
 
+// Текущий индекс в массиве greetings
 var currentIndex = 0;
 
-async function displayAndErase(word) {
-    await displayWord(word);
-    await sleep(4000); // Подождать 5 секунд перед стиранием слова
-    await eraseWord();
+// Функция для поэтапного вывода и стирания нового слова
+function displayAndErase(word) {
+    var index = 0;
+    var interval = setInterval(function () {
+        welcomeText.textContent = word.substring(0, index);
+        index++;
+        if (index > word.length) {
+            clearInterval(interval);
+            // Ждем 5 секунд перед стиранием слова
+            setTimeout(function () {
+                eraseWord();
+            }, 4000);
+        }
+    }, 55); // Интервал задержки между буквами (в миллисекундах)
 }
 
-async function displayWord(word) {
-    for (var i = 0; i <= word.length; i++) {
-        welcomeText.textContent = word.substring(0, i);
-        await sleep(55); // Интервал задержки между буквами (в миллисекундах)
-    }
+// Функция для стирания слова
+function eraseWord() {
+    var index = welcomeText.textContent.length;
+    var interval = setInterval(function () {
+        welcomeText.textContent = welcomeText.textContent.substring(0, index);
+        index--;
+        if (index < 0) {
+            clearInterval(interval);
+            // Выбираем следующий синоним по порядку
+            currentIndex = (currentIndex + 1) % greetings.length;
+            setTimeout(function () {
+                displayAndErase(greetings[currentIndex]);
+            }, 0);
+        }
+    }, 25); // Интервал задержки между стиранием букв (в миллисекундах)
 }
 
-async function eraseWord() {
-    for (var i = welcomeText.textContent.length; i >= 0; i--) {
-        welcomeText.textContent = welcomeText.textContent.substring(0, i);
-        await sleep(25); // Интервал задержки между стиранием букв (в миллисекундах)
-    }
-    currentIndex = (currentIndex + 1) % greetings.length;
-    displayAndErase(greetings[currentIndex]);
-}
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
+// Запускаем процесс
 displayAndErase(greetings[currentIndex]);

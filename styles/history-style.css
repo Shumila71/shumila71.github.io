@@ -219,5 +219,8 @@
     .history .second-part{
         margin-top: -32px;
     }
+    .history .card3 {
+        max-width: 250px;
+    }
 }
 
