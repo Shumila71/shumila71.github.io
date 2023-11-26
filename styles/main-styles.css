@@ -90,6 +90,7 @@ a:active, a:visited, a{
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 36px;
 }
 #welcomeText {
     height: 1px;
@@ -171,4 +172,8 @@ a:active, a:visited, a{
     transition: opacity 1.5s, -webkit-transform 1.5s;
     transition: opacity 1.5s, transform 1.5s;
     transition: opacity 1.5s, transform 1.5s, -webkit-transform 1.5s;
-  }
+}
+img {
+    -webkit-filter: drop-shadow(2px 2px 20px var(--border-color));
+    filter: drop-shadow(2px 2px 20px var(--border-color));
+}

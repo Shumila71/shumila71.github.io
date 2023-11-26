@@ -156,6 +156,7 @@
         align-items: center;
         flex-direction: column;
         flex-wrap: wrap;
+        margin-bottom: 0;
     }
     #welcomeText {
         margin-top: .4em;
