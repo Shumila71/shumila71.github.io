@@ -103,7 +103,7 @@
     margin-top: 10px;
     transition: width 0.3s;
 }
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 767px) {
     .game-libs .first-h{
         text-align: left;
     }

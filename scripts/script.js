@@ -1,12 +1,15 @@
 var menuToggle = document.getElementById('menu-toggle');
 var header = document.querySelector('header');
+var nameSite = document.querySelector('.nameSite');
+const body = document.body;
+var menuList1 = document.getElementById('mobile-items');
 menuToggle.addEventListener('change', function() {
     if (menuToggle.checked) {
-        header.style.position = 'fixed';
-        header.style.width = '97%';
+        body.style.overflow = 'hidden';
+        menuList1.style.width = nameSite.offsetWidth + 4 + "px";
     } else {
         header.style.position = 'relative';
-        header.style.width = '';
+        body.style.overflow = '';
     }
 });
 

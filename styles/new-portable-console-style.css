@@ -165,7 +165,7 @@
     }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 767px) {
     .two-column-grid .card1 {
         margin-bottom: 10px;
         height: 350px;

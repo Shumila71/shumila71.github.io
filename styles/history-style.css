@@ -198,7 +198,7 @@
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 767px) {
     .history .section-right, .history  .section-left{
         gap:0;
     }

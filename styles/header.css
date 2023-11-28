@@ -45,7 +45,7 @@ nav ul{
     font-size: 16px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
     .mobile{
         display: block;
     }
@@ -94,9 +94,8 @@ nav ul{
         border-top: none;
         border-left: 2px solid var(--border-color);
         border-right: 2px solid var(--border-color);
-        border-bottom: 2px solid var(--border-color);
-        margin-left:1% ;
-        width: 97%;
+        border-bottom: 2px solid var(--border-color);        
+        margin-left: 4px;
         height: 100%;
         align-items: center;
         justify-content: center;
@@ -104,7 +103,7 @@ nav ul{
         left: 0;
         background-color: var(--bg-sec-color);
         z-index: 1000;
-        
+        gap:20px;
     }
     .burger-icon {
         position: absolute;
@@ -155,4 +154,67 @@ nav ul{
         opacity: 0;
     }
     
+    
+}
+
+@media screen and (min-width: 767px) and (max-width: 1000px){
+    #tablet-header{
+        margin-bottom: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(2,40%);
+        grid-template-areas: 
+        "e1 e2"
+        "e3 e4"
+        "e5 e5";
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        gap: 15px;
+    }
+    #pc-head{
+        display: none;
+    }
+    #for-grid{
+        grid-area: e5;
+        width: 32rem !important;
+    }
+    .nameSite{
+        margin-top: 0;
+    }
+    #tablet-header .btn4 {
+        width: 15rem;
+    }
+    header .mobile{
+        display: none;
+    }
+    header #pc-head{
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 1001px) and (max-width: 1610px){
+    #pc-head{
+        margin-bottom: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+        "e1 e2 e3"
+        "e4 . e5";
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    #for-grid{
+        grid-area: e5;
+    }
+    .nameSite{
+        margin-top: 0;
+    }
+    header .mobile{
+        display: none;
+    }
 }
