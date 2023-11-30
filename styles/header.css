@@ -157,7 +157,7 @@ nav ul{
     
 }
 
-@media screen and (min-width: 767px) and (max-width: 1000px){
+@media screen and (min-width: 768px) and (max-width: 1000px){
     #tablet-header{
         margin-bottom: 1.5rem;
         display: grid;
@@ -216,5 +216,20 @@ nav ul{
     }
     header .mobile{
         display: none;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 1001px) and (max-width: 1440px){
+    header{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    main {
+        grid-area: main;
+        padding-left: 15px;
+        margin-left: 7%;
+        margin-right: 7%;
     }
 }

@@ -1,13 +1,8 @@
-// Получаем элемент заголовка по его id
 var welcomeText = document.getElementById("welcomeText");
-
-// Массив с синонимами приветствия на разных языках
 var greetings = ["Готовы к новому квесту?","Приготовьтесь к игровым открытиям.","У нас интересно, оставайтесь с нами!","Добро пожаловать в мир игр и консолей."];
 
-// Текущий индекс в массиве greetings
 var currentIndex = 0;
 
-// Функция для поэтапного вывода и стирания нового слова
 function displayAndErase(word) {
     var index = 0;
     var interval = setInterval(function () {
@@ -15,15 +10,13 @@ function displayAndErase(word) {
         index++;
         if (index > word.length) {
             clearInterval(interval);
-            // Ждем 5 секунд перед стиранием слова
             setTimeout(function () {
                 eraseWord();
             }, 4000);
         }
-    }, 55); // Интервал задержки между буквами (в миллисекундах)
+    }, 55); 
 }
 
-// Функция для стирания слова
 function eraseWord() {
     var index = welcomeText.textContent.length;
     var interval = setInterval(function () {
@@ -31,14 +24,12 @@ function eraseWord() {
         index--;
         if (index < 0) {
             clearInterval(interval);
-            // Выбираем следующий синоним по порядку
             currentIndex = (currentIndex + 1) % greetings.length;
             setTimeout(function () {
                 displayAndErase(greetings[currentIndex]);
             }, 0);
         }
-    }, 25); // Интервал задержки между стиранием букв (в миллисекундах)
+    }, 25); 
 }
 
-// Запускаем процесс
 displayAndErase(greetings[currentIndex]);
