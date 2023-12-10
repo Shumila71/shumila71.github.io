@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-10T03:51:45.186Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.2470 YaBrowser/23.11.0.2470 Yowser/2.5 Safari/537.36" etag="X1_n8ps8OqNDNg05BrRG" version="22.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-10T03:52:01.354Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.2470 YaBrowser/23.11.0.2470 Yowser/2.5 Safari/537.36" etag="B-6zk-dCNQ-xP4zqbyAm" version="22.1.7" type="github">
   <diagram name="Страница — 1" id="L3PKJxNTwHp6rq7nzCVX">
     <mxGraphModel dx="1434" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -201,13 +201,13 @@
           <mxGeometry x="566.9" y="291.17" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="iF7RnvMgbBvQUuc80PQl-68" value="0" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="490" y="291.17" width="30" height="30" as="geometry" />
+          <mxGeometry x="500" y="291.17" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="iF7RnvMgbBvQUuc80PQl-71" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="686.9" y="375.17" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="iF7RnvMgbBvQUuc80PQl-72" value="0" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="596.9" y="375.17" width="30" height="30" as="geometry" />
+          <mxGeometry x="620" y="375.17" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="iF7RnvMgbBvQUuc80PQl-73" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.735;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="iF7RnvMgbBvQUuc80PQl-47" target="iF7RnvMgbBvQUuc80PQl-72">
           <mxGeometry relative="1" as="geometry" />
